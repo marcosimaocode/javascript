@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=~, initial-scale=1.0">
+    <title>Primeiros passos</title>
+    <style>
+        body{
+            background-color: rgb(5, 109, 141);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar  o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim</div>
+
+
+    <script>
+        var corpo = window.document.body
+        var p1 = document.getElementsByTagName('p')[1] /* posso escolher qual dos p's eu quero, metendo dentro de [zero é o primeiro] */
+
+        var d = window.document.getElementById('msg')
+
+       /*
+       EX:  p1.style.color = 'red'         
+        corpo.style.backgroundColor = 'green' */
+
+
+        /*
+        EX: 
+         window.document.write('Está escrito isto: ' + p1.innerText)  
+         
+         Posso ir buscar o HTML mesmo (o codigo), com o qualquercoisa.innerHTML */
+
+         d.style.background = 'black'
+
+
+
+    </script>
+
+
+</body>
+</html>
